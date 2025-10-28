@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Ghost Pepper Digital</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta name="theme-color" content="#0b0b0b">
+</head>
+<body class="site">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="shell header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__text">GHOST<span>PEPPER</span></span>
+        <span class="brand__tag">DIGITAL</span>
+      </a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="nav__active nav__cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Contact hero -->
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <div class="page-hero__img page-hero__img--contact" role="img" aria-label="Futuristic lighting red and slate tones"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__grid"></div>
+      </div>
+
+      <div class="shell page-hero__content">
+        <div class="page-hero__eyebrow">/ Let's talk</div>
+        <h1 class="page-hero__title">Let’s talk growth.</h1>
+        <p class="page-hero__desc">
+          Tell us about your goals — we’ll bring the heat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact layout -->
+    <section class="contact-wrap shell">
+
+      <form class="contact-form" action="#" method="post">
+        <div class="field">
+          <label for="name">Name*</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text">
+        </div>
+
+        <div class="field">
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+
+        <button class="btn btn--primary btn--full" type="submit">Send Message</button>
+        <p class="form-note">
+          We’ll get back to you within one business day.
+        </p>
+      </form>
+
+      <aside class="contact-side">
+        <div class="contact-card">
+          <h2 class="contact-card__title">Contact</h2>
+
+          <p class="contact-card__row">
+            <span class="contact-card__label">Email:</span><br>
+            <a class="contact-card__value" href="mailto:hello@ghostpepperdigital.com">hello@ghostpepperdigital.com</a>
+          </p>
+
+          <p class="contact-card__row">
+            <span class="contact-card__label">Location:</span><br>
+            <span class="contact-card__value">Cape Town, South Africa</span>
+          </p>
+
+          <div class="contact-card__socials">
+            <a href="#" class="social-chip">LinkedIn</a>
+            <a href="#" class="social-chip">Facebook</a>
+            <a href="#" class="social-chip">Instagram</a>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta shell">
+      <div class="cta__panel">
+        <div class="cta__left">
+          <h2 class="cta__title">Prefer email?</h2>
+          <p class="cta__text">
+            Slide into our inbox.
+          </p>
+        </div>
+        <div class="cta__right">
+          <a class="btn btn--ghost btn--full" href="mailto:hello@ghostpepperdigital.com">hello@ghostpepperdigital.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">© <span id="year"></span> Ghost Pepper Digital</div>
+        <div class="footer__loc">Cape Town, South Africa</div>
+      </div>
+
+      <div class="footer__col footer__col--social">
+        <a href="#" class="social-chip">LinkedIn</a>
+        <a href="#" class="social-chip">Facebook</a>
+        <a href="#" class="social-chip">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
