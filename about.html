@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Ghost Pepper Digital</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta name="theme-color" content="#0b0b0b">
+</head>
+<body class="site">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="shell header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__text">GHOST<span>PEPPER</span></span>
+        <span class="brand__tag">DIGITAL</span>
+      </a>
+      <nav class="nav">
+        <a class="nav__active" href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero banner / page header -->
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <div class="page-hero__img" role="img" aria-label="City and tech aesthetic"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__grid"></div>
+      </div>
+
+      <div class="shell page-hero__content">
+        <div class="page-hero__eyebrow">/ Who we are</div>
+        <h1 class="page-hero__title">About Us</h1>
+        <p class="page-hero__desc">Marketing with bite — results without the fluff.</p>
+      </div>
+    </section>
+
+    <!-- About body copy from client -->
+    <section class="text-block shell">
+      <div class="text-block__inner">
+        <p>
+          At Ghost Pepper Digital, we bring the heat to your digital marketing. Based in Cape Town, South Africa, we work with both local and international brands who want to see real results — not just reports.
+        </p>
+
+        <p>
+          Our team blends strategic thinking, data-driven decisions, and creative flair to help businesses grow through smart, high-performing campaigns. We specialise in Google Ads, Meta (Facebook &amp; Instagram) Ads, and LinkedIn Ads, with support from in-house copywriting and graphic design to keep your message sharp and on-brand.
+        </p>
+
+        <p>
+          We’re not an agency that hides behind jargon or inflated retainers. We’re your digital partners — transparent, accountable, and fully invested in your success.
+        </p>
+
+        <p>
+          At Ghost Pepper Digital, we believe in marketing with bite — campaigns that get noticed, clicks that convert, and data that tells a story worth sharing.
+        </p>
+
+        <blockquote class="quote-card">
+          “Founded by a husband-and-wife duo, each bringing close to a decade of marketing expertise and a shared passion for helping brands grow.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta shell">
+      <div class="cta__panel">
+        <div class="cta__left">
+          <h2 class="cta__title">Let’s build campaigns that actually convert.</h2>
+          <p class="cta__text">
+            We’re ready when you are.
+          </p>
+        </div>
+        <div class="cta__right">
+          <a class="btn btn--primary btn--full" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">© <span id="year"></span> Ghost Pepper Digital</div>
+        <div class="footer__loc">Cape Town, South Africa</div>
+      </div>
+
+      <div class="footer__col footer__col--social">
+        <a href="#" class="social-chip">LinkedIn</a>
+        <a href="#" class="social-chip">Facebook</a>
+        <a href="#" class="social-chip">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
